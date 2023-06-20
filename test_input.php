@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $num_main_questions = intval($_POST['num_main_questions']);
   
   // Create a database connection
-  $conn = mysqli_connect('localhost', 'root', '', 'mysql');
+  $conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
   if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());
   }

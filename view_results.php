@@ -312,7 +312,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $academic_year = $_POST['academic-year'] ?? '';
 
   // Create a database connection
-  $conn = mysqli_connect('localhost', 'root', '', 'mysql');
+  $conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
   if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());
   }
@@ -354,7 +354,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
       // Create a new database connection for each paper
-      $conn_co = mysqli_connect('localhost', 'root', '', $department);
+      $conn_co = mysqli_connect('localhost', 'root', 'root', $department);
       if (!$conn_co) {
         die('Connection failed: ' . mysqli_connect_error());
       }

@@ -9,7 +9,7 @@ $academic_year = $_SESSION['academic_year'];
 $department = $_SESSION['department'];
 
 // Create a database connection
-$conn = mysqli_connect('localhost', 'root', '', 'mysql');
+$conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
 if (!$conn) {
   die('Connection failed: ' . mysqli_connect_error());
 }

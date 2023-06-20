@@ -52,7 +52,7 @@ session_start();
 
 <?php
 // Create a database connection
-$conn = mysqli_connect('localhost', 'root', '', 'mysql');
+$conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
 if (!$conn) {
   die('Connection failed: ' . mysqli_connect_error());
 }

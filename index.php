@@ -17,7 +17,7 @@
 
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+  <link rel="stylesheet" href="assets/css/a.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
 
@@ -73,8 +73,8 @@
           <div class="col-lg-12">
             <div class="caption">
               <h6></h6>
-              <h2>Welcome to Education</h2>
-              <p>This is an edu meeting HTML CSS template provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is a Bootstrap v5.1.3 layout. The video background is taken from Pexels website, a group of young people by <a rel="nofollow" href="https://www.pexels.com/@pressmaster" target="_blank">Pressmaster</a>.</p>
+              <h2>Welcome to course Outcome</h2>
+              <p>This is an Server based web application to Mapping and Saving a Students marks and its co-po's <a rel="nofollow" href="#" target="_blank"></a>.</p>
               <div class="main-button-red">
                 <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
               </div>
@@ -104,8 +104,8 @@
                 <img src="assets/images/service-icon-01.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Education</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Creating</h4>
+                <p>Creating put together diverse elements and find new meaning, create something new..</p>
               </div>
             </div>
 
@@ -114,8 +114,8 @@
                 <img src="assets/images/service-icon-02.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Teachers</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Evaluating</h4>
+                <p>Assess effectiveness of a concept, arrive at judgments in relation to values.</p>
               </div>
             </div>
 
@@ -124,8 +124,8 @@
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Students</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Analyzing</h4>
+                <p>Separate parts of a whole material/ concept and interpret underlying principles / relationships.</p>
               </div>
             </div>
 
@@ -134,8 +134,8 @@
                 <img src="assets/images/service-icon-02.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Online Meeting</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Applying</h4>
+                <p>Apply knowledge in real or simulated situations.</p>
               </div>
             </div>
 
@@ -144,8 +144,18 @@
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
-                <h4>Best Networking</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                <h4>Understanding</h4>
+                <p>Understand and interpret the meaning from available information.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-03.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Remembering</h4>
+                <p>Retrieve, Recall or Recognize information.</p>
               </div>
             </div>
 
@@ -155,79 +165,7 @@
     </div>
   </section>
 
-  <!-- 
-    ----------------------------------------------------------------
-    Second service
-    ----------------------------------------------------------------
-   -->
  
-   <section class="service">
-    <div class="container">
-      <div class="col-lg-12">
-        <div class="section-heading">
-          <h2>Bloom's Taxonomy</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Best Education</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Best Teachers</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Best Students</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Online Meeting</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Best Networking</h4>
-                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   
 
   
@@ -251,7 +189,7 @@
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL...*" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-4">
@@ -279,19 +217,19 @@
             <ul>
               <li>
                 <h6>Phone Number</h6>
-                <span>010-020-0340</span>
+                <span>+91 000-000-0000</span>
               </li>
               <li>
                 <h6>Email Address</h6>
-                <span>info@meeting.edu</span>
+                <span>courseoutcome@gmail.com</span>
               </li>
               <li>
                 <h6>Street Address</h6>
-                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+                <span>Skn Sinhgad collage of engineering pandhatpur.</span>
               </li>
               <li>
                 <h6>Website URL</h6>
-                <span>www.meeting.edu</span>
+                <span>www.SKNSCOE.edu</span>
               </li>
             </ul>
           </div>
@@ -299,8 +237,7 @@
       </div>
     </div>
     <div class="footer">
-      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved.
-        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+      <p>Copyright © 2023 Course Outcomes.
       </p>
     </div>
   </section>

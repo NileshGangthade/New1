@@ -48,7 +48,7 @@ function getDepartmentName($department)
         <div class="form_wrapper">
             <div class="form_container">
                 <div class="title_container">
-                    <h1>Show Available Papers Direct Attainment</h1>
+                    <h1>Question Paper Generator</h1>
                 </div>
                 <div class="row clearfix">
                     <div class="">
@@ -167,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
   // Create a database connection
-  $conn = mysqli_connect('localhost', 'root', '', 'mysql');
+  $conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
   if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());
   }
