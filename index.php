@@ -17,7 +17,7 @@
 
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/a.css">
+  <link rel="stylesheet" href="assets/css/b.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
 
@@ -86,24 +86,24 @@
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
- 
 
-  <section class="services">
+
+  <section class="services section-1">
     <div class="container">
       <div class="col-lg-12">
         <div class="section-heading">
-          <h2>Bloom's Taxonomy</h2>
+          <h2>Course Outcomes (CO)</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-service-item owl-carousel">
-
             <div class="item">
               <div class="icon">
                 <img src="assets/images/service-icon-01.png" alt="">
               </div>
               <div class="down-content">
+                <h4>CO-1</h4>
                 <h4>Creating</h4>
                 <p>Creating put together diverse elements and find new meaning, create something new..</p>
               </div>
@@ -114,6 +114,7 @@
                 <img src="assets/images/service-icon-02.png" alt="">
               </div>
               <div class="down-content">
+              <h4>CO-2</h4>
                 <h4>Evaluating</h4>
                 <p>Assess effectiveness of a concept, arrive at judgments in relation to values.</p>
               </div>
@@ -124,6 +125,7 @@
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
+              <h4>CO-3</h4>
                 <h4>Analyzing</h4>
                 <p>Separate parts of a whole material/ concept and interpret underlying principles / relationships.</p>
               </div>
@@ -134,6 +136,7 @@
                 <img src="assets/images/service-icon-02.png" alt="">
               </div>
               <div class="down-content">
+              <h4>CO-4</h4>
                 <h4>Applying</h4>
                 <p>Apply knowledge in real or simulated situations.</p>
               </div>
@@ -144,6 +147,7 @@
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
+              <h4>CO-5</h4>
                 <h4>Understanding</h4>
                 <p>Understand and interpret the meaning from available information.</p>
               </div>
@@ -154,6 +158,7 @@
                 <img src="assets/images/service-icon-03.png" alt="">
               </div>
               <div class="down-content">
+              <h4>CO-6</h4>
                 <h4>Remembering</h4>
                 <p>Retrieve, Recall or Recognize information.</p>
               </div>
@@ -165,12 +170,95 @@
     </div>
   </section>
 
- 
-  
 
-  
+  <!----------------------- second section ----------------------------------->
+  <section class="services section-2">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h2>Bloom's Taxonomy (BL)</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-01.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>BL-1</h4>
+                <h4>Creating</h4>
+                <p>Creating put together diverse elements and find new meaning, create something new..</p>
+              </div>
+            </div>
 
-  
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-02.png" alt="">
+              </div>
+              <div class="down-content">
+              <h4>BL-2</h4>
+                <h4>Evaluating</h4>
+                <p>Assess effectiveness of a concept, arrive at judgments in relation to values.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-03.png" alt="">
+              </div>
+              <div class="down-content">
+              <h4>BL-3</h4>
+                <h4>Analyzing</h4>
+                <p>Separate parts of a whole material/ concept and interpret underlying principles / relationships.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-02.png" alt="">
+              </div>
+              <div class="down-content">
+              <h4>BL-4</h4>
+                <h4>Applying</h4>
+                <p>Apply knowledge in real or simulated situations.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-03.png" alt="">
+              </div>
+              <div class="down-content">
+              <h4>BL-5</h4>
+                <h4>Understanding</h4>
+                <p>Understand and interpret the meaning from available information.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-03.png" alt="">
+              </div>
+              <div class="down-content">
+              <h4>BL-6</h4>
+                <h4>Remembering</h4>
+                <p>Retrieve, Recall or Recognize information.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
   <section class="contact-us" id="contact">
     <div class="container">
       <div class="row">
