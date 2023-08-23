@@ -24,5 +24,17 @@ $createMainTableSql = "CREATE TABLE IF NOT EXISTS main_table (
 )";
 $conn->query($createMainTableSql);
 
+$checkTableSql = "CREATE TABLE IF NOT EXISTS temp_table (
+    user_type VARCHAR(255),
+    department VARCHAR(255),
+    name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    password VARCHAR(255),
+    otp VARCHAR(10),
+    otp_expiry TIMESTAMP,
+    email_status INT DEFAULT 0
+)";
+$conn->query($checkTableSql);
+
 echo "Setup completed!";
 ?>
