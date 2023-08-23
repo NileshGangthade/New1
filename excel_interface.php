@@ -52,7 +52,7 @@ session_start();
 
 <?php
 // Create a database connection
-$conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
+$conn = mysqli_connect('localhost', 'root', '', 'mysql');
 if (!$conn) {
   die('Connection failed: ' . mysqli_connect_error());
 }
@@ -70,7 +70,6 @@ if (isset($_GET['table_name']) && isset($_GET['department'])) {
 } else {
   die('Session variables not set.');
 }
-
 
 include 'header.php';
 // Select the appropriate database

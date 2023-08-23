@@ -1,42 +1,62 @@
 <?php
 // Create a database connection
-$conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
+$conn = mysqli_connect('localhost', 'root', '', 'mysql');
 if (!$conn) {
   die('Connection failed: ' . mysqli_connect_error());
 }
 
-if (isset($_GET['table_name']) && isset($_GET['department']) && isset($_GET['year'])&& isset($_GET['sem']) && isset($_GET['subject']) && isset($_GET['test-type']) && isset($_GET['division']) && isset($_GET['academic_year'])) {
+// Check if table_name is set in either $_GET or $_SESSION
+if (isset($_GET['table_name'])) {
   $table_name = $_GET['table_name'];
-  $department = $_GET['department'];
-  $year = $_GET['year'];
-  $sem = $_GET['sem'];
-  $year = $_GET['subject'];
-  $testType = $_GET['test-type'];
-  $division = $_GET['division'];
-  $academic_year = $_GET['academic_year'];
-
-  
-  $_SESSION['table_name'] = $table_name;
-  $_SESSION['department'] = $department;
-  $_SESSION['year'] = $year;
-  $_SESSION['sem'] = $sem;
-  $_SESSION['subject'] = $subject;
-  $_SESSION['test-type'] = $testType;
-  $_SESSION['division'] = $division;
-  $_SESSION['academic_year'] = $academic_year;
-
-} elseif (isset($_SESSION['table_name']) && isset($_SESSION['department']) && isset($_SESSION['year']) && isset($_SESSION['sem']) && isset($_SESSION['subject']) && isset($_SESSION['test-type']) && isset($_SESSION['division']) && isset($_SESSION['academic_year'])) {
+} elseif (isset($_SESSION['table_name'])) {
   $table_name = $_SESSION['table_name'];
-  $department = $_SESSION['department'];
-  $year = $_SESSION['year'];
-  $sem = $_SESSION['sem'];
-  $subject = $_SESSION['subject'];
-  $testType = $_SESSION['test-type'];
-  $division = $_SESSION['division'];
-  $academic_year = $_SESSION['academic_year'];
 } else {
-  die('Session variables not set.');
+  die('Table name not provided.');
 }
+
+// Explode the table name into its parts
+$parts = explode('_', $table_name);
+
+// Define possible values for some fields
+$possibleYears = ['SY_Btech', 'TY_Btech', 'BE'];
+$possibleSems = ['SEM_I', 'SEM_II'];
+$possibleTestTypes = ['UT1', 'UT2', 'UT3', 'Prelim', 'Assign1', 'Assign2', 'Assign3', 'Assign4'];
+$possibleDivisions = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+$possibleDepartments = ['first-year', 'cse', 'electrical', 'mech', 'civil', 'entc']; // add more if necessary
+
+// Filtering known parts
+$year = array_intersect($parts, $possibleYears);
+$year = reset($year);  // get the first (and only) value
+
+// Given that SEM and I/II are separate, we need to combine them
+if (in_array('SEM', $parts)) {
+  $sem_key = array_search('SEM', $parts);
+  $sem = $parts[$sem_key] . '_' . $parts[$sem_key + 1];
+}
+
+
+$testType = array_intersect($parts, $possibleTestTypes);
+$testType = reset($testType);
+
+$division = array_intersect($parts, $possibleDivisions);
+$division = reset($division);
+
+$department = array_intersect($parts, $possibleDepartments);
+$department = reset($department);
+
+// Since the academic year is split into two parts, we combine them
+$academic_year = $parts[count($parts) - 2] . '_' . end($parts);
+
+
+// The remaining part will be the subject
+$knownParts = [$year, $sem, $testType, $division, $department, $academic_year];
+$subject = $parts[5];
+
+// If you have subjects that might be split into multiple parts due to underscores, you can add:
+for ($i = 6; $i < count($parts) - 3; $i++) {
+    $subject .= '_' . $parts[$i];
+}
+
 
 echo "<h2 style='font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 15px;'>Year: $year  |  Semester: $sem  |  Department: $department</h2>";
 echo "<h2 style='font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 15px;'>Subject: $subject  |  Test type: $testType  |  Division: $division </h2>";
