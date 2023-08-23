@@ -82,6 +82,8 @@ if ($is_admin == 1 && $user_type != 'hod') {
                 <?php
                 if ($user_type == 'hod') {
                 ?>
+
+                    
                     <a href="department_approval_list.php">
                         <button class="nav_button">
                             <span></span>
@@ -98,6 +100,14 @@ if ($is_admin == 1 && $user_type != 'hod') {
                             <span></span> Progress
                         </button>
                     </a>
+
+                    <a href="add_users.php">
+                        <button class="nav_button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> Add Users
+                        </button>
                 <?php
                 }
                 ?>
