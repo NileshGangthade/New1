@@ -4,7 +4,7 @@
 
 $host = 'localhost';
 $user = 'root';
-$password = 'root';
+$password = '';
 $dbname = 'co_login';
 
 $conn = new mysqli($host, $user, $password, $dbname);
