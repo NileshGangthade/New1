@@ -38,4 +38,3 @@ $conn->query($checkTableSql);
 
 echo "Setup completed!";
 ?>
-//try commented out below
