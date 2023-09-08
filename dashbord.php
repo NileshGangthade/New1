@@ -167,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
   // Create a database connection
-  $conn = mysqli_connect('localhost', 'root', 'root', 'mysql');
+  $conn = mysqli_connect('localhost', 'root', '', 'mysql');
   if (!$conn) {
     die('Connection failed: ' . mysqli_connect_error());
   }
@@ -184,7 +184,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   } else {
     echo "Error creating database: " . mysqli_error($conn);
   }
-
 
   // Select the database
   mysqli_select_db($conn, $department);
