@@ -1,7 +1,5 @@
 <?php
-
-
-
+//dhjbcacb
 $host = 'localhost';
 $user = 'root';
 $password = '';
